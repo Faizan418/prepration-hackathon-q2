@@ -14,10 +14,10 @@ const Header = () => {
         <div className={styles.first_div}>
           <ul className={styles.ul_div}>
             <Link href={'/'}>
-            <li className={styles.li_div}><span>Woman's Fashion</span><span><FaChevronRight /></span> </li>
+            <li className={styles.li_div}><span>Woman&#39;s Fashion</span><span><FaChevronRight /></span> </li>
             </Link>
             <Link href={'/'}>
-            <li className={styles.li_div}><span>Men's Fashion</span><span><FaChevronRight /></span> </li>
+            <li className={styles.li_div}><span>Men&#39;s Fashion</span><span><FaChevronRight /></span> </li>
             </Link>
             <Link href={'/'}>
             <li className={styles.li_div}>Electronic</li>
@@ -32,7 +32,7 @@ const Header = () => {
             <li className={styles.li_div}>Sports & Outdoor</li>
             </Link>
             <Link href={'/'}>
-            <li className={styles.li_div}>Bade's & Toys</li>
+            <li className={styles.li_div}>Bade&#39;s & Toys</li>
             </Link>
             <Link href={'/'}>
             <li className={styles.li_div}>Groceries & Pets</li>
