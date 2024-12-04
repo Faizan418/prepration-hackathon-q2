@@ -1,0 +1,228 @@
+.main_containar{
+    border-bottom: 1px solid rgb(124, 124, 124);
+    height: 100%;
+    padding: 0px 80px;
+}
+.containar{
+    /* border: 1px solid black; */
+    height: 100%;
+}
+.first{
+    display: flex;
+    /* border: 1px solid black; */
+}
+.div_one{
+    /* border: 1px solid black; */
+    width: 25%;
+    background-color: black;
+}
+.div_two{
+    /* border: 1px solid black; */
+    width: 70%;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 10px;
+    padding-left: 30px;
+    background-color: black;
+
+}
+.heading_two{
+    font-weight: bolder;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.heading_two:hover{
+    color: red;
+}
+.lenguage_select{
+    outline: none;
+    background-color: black;
+    color: white;
+}
+.second{
+    display: flex;
+    /* border-bottom: 1px solid rgb(145, 145, 145); */
+    padding: 10px;
+    margin-top: 15px;
+    align-items: center;
+    /* justify-content: right; */
+}
+.div_oneone{
+    /* border: 1px solid black; */
+    width: 25%;
+    display: flex;
+    /* justify-content: left; */
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.div_twotwo{
+    /* border: 1px solid black; */
+    width: 70%;
+    font-size: small;
+    font-weight: bold;
+    padding:0 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.ul_div{
+    /* border: 1px solid rgb(255, 0, 0); */
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    gap: 35px;
+}
+.div_li{
+    /* border: 1px solid black; */
+    padding: 3px 5px;
+    margin-bottom: 2px;
+}
+
+ .div_li:hover{
+
+    /* text-decoration: underline 3px black; */
+    border-bottom: 2px solid black;
+    margin-bottom: 0;
+}
+
+.other_div{
+    /* border: 1px solid black; */
+    align-items: center;
+    height: 30px;
+    display: flex;
+    /* background-color: rgb(245, 243, 243); */
+}
+.inpt_div{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+}
+.input{
+    /* border: 1px solid black; */
+    height: 30px;
+    padding: 5px;
+    width: 150px;
+    -webkit-text-fill-color: rgb(83, 83, 83);
+    font-size: smaller;
+    background-color: rgb(228, 228, 228);
+    outline: none;
+}
+.hamburger {
+    display: none;
+    font-size: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+  }
+
+@media(max-width: 1100px){
+    .ul_div{
+        gap: 16px;
+    }
+}
+@media(max-width: 1030px){
+    .div_one{
+        display: none;
+    }
+    .div_two{
+        width: 100%;
+    }
+    .second{
+        padding: 0;
+    }
+}
+@media(max-width: 1000px){
+    .ul_div{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        /* right: 100px; */
+        left: 80px;
+        width: 60%;
+        height: 82%;
+        background-color: #00000056;
+        color: white;
+        backdrop-filter: blur(7px);
+        padding: 20px 45px;
+        text-align: left;
+        z-index: 1;
+        transition: ease 0.6s;
+    } 
+    .div_li {
+        width: 100%;
+        padding: 9px 20px;
+      }
+      .ul_div.show_menu {
+        display: flex;
+      }
+    
+      .hamburger {
+        display: block;
+      }
+      .other_div{
+        position: relative;
+        right: 15px;
+        justify-content: right;
+        text-align: right;
+      }
+      .div_twotwo{
+        justify-content: right;
+      }
+      .inpt_div{
+        display: none;
+    }
+}
+@media(max-width: 900px){
+    .main_containar{
+        padding: 10px 50px;
+    }
+    .ul_div{
+        left: 50px;
+    }
+}
+@media(max-width: 700px){
+    .main_containar{
+        padding: 10px 30px;
+    }
+    .ul_div{
+        left: 30px;
+    }
+    .extra{
+        display: none;
+    }
+    
+    
+    
+}
+@media(max-width: 500px){
+    .main_containar{
+        padding: 10px 10px;
+    }
+    .ul_div{
+        left: 10px;
+    }
+    .div_two{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .ul_div{
+        top: 105px;
+        padding: 30px 30px;
+    }
+    .div_li {
+        width: 100%;
+        padding: 9px 10px;
+      }
+}

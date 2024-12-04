@@ -1,82 +1,69 @@
-'use client'
+
 import styles from './Header.module.css'
 import Link from 'next/link'
-import { CiSearch } from "react-icons/ci";
-import { FaRegHeart } from "react-icons/fa";
-import { BsCart3 } from "react-icons/bs";
-import { useState } from "react";
+import Image from 'next/image';
+import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+
 
 const Header = () => {
-  const [menuVisible, setMenuVisible] = useState(false);
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
-
   return (
-   <div className={styles.main_containar}>
+    <div className={styles.main_containar}>
+      <div className={styles.containar}>
 
-    <div className={styles.containar}>
-
-      <div className={styles.first}>
-          <div className={styles.div_one}></div>
-          <div className={styles.div_two}>
-            <div className={styles.extra_headings}>
-              <span className={styles.heading_one}>Summer Sale For All<span className={styles.extra}> Swim Suits And Free Express Delivery </span>- OFF 50%! </span>
-              <span className={styles.heading_two}><Link href={'/'}> Shop Now</Link></span>
+        <div className={styles.first_div}>
+          <ul className={styles.ul_div}>
+            <Link href={'/'}>
+            <li className={styles.li_div}><span>Woman's Fashion</span><span><FaChevronRight /></span> </li>
+            </Link>
+            <Link href={'/'}>
+            <li className={styles.li_div}><span>Men's Fashion</span><span><FaChevronRight /></span> </li>
+            </Link>
+            <Link href={'/'}>
+            <li className={styles.li_div}>Electronic</li>
+            </Link>
+            <Link href={'/'}>
+            <li className={styles.li_div}>Home & LifeStyles</li>
+            </Link>
+            <Link href={'/'}>
+            <li className={styles.li_div}>Medicine</li>
+            </Link>
+            <Link href={'/'}>
+            <li className={styles.li_div}>Sports & Outdoor</li>
+            </Link>
+            <Link href={'/'}>
+            <li className={styles.li_div}>Bade's & Toys</li>
+            </Link>
+            <Link href={'/'}>
+            <li className={styles.li_div}>Groceries & Pets</li>
+            </Link>
+            <Link href={'/'}>
+            <li className={styles.li_div}>Health & Beauty</li>
+            </Link>
+          </ul>
+        </div>
+        <div className={styles.second_div}>
+          <div className={styles.banner_div}>
+            <div className={styles.one}>
+              <div className={styles.one_one}>
+                <Image src={'/images/file-header/apple-img.png'} alt='logo' width={30} height={100}/>
+                <h2>I Phone 14 Series</h2>
+              </div>
+              <div className={styles.two_two}>
+                <h1>Up to 10% <br /> off Voucher</h1>
+              </div>
+              <div className={styles.three_three}>
+                <Link className='flex gap-3' href={''}><h1 className={styles.shop_now}>Shop Now</h1><span className='text-xl'><FaArrowRight /></span></Link>
+              </div>
             </div>
-            <div>
-              <select className={styles.lenguage_select}>
-                    <option value="English">English</option>
-                    <option value="Urdu">Urdu</option>
-                    <option value="Sindhi">Sindhi</option>
-                    <option value="Arabic">Arabic</option>
-                    <option value="Chaines">Chaines</option>
-              </select>
+            <div className={styles.two}>
+              <Image src={'/images/file-header/iphone-img.png'} alt='iphone' width={500} height={100}/>
             </div>
           </div>
+        </div>
+
       </div>
-
-      <div className={styles.second}>
-          <div className={styles.div_oneone}>Exclusive</div>
-          <div className={styles.div_twotwo}>
-
-            <ul className={`${styles.ul_div} ${menuVisible ? styles.show_menu : ""}`}>
-              <li className={styles.div_li}><Link href={'/'}>Home</Link></li>
-              <li className={styles.div_li}><Link href={'/contact'}>Contact</Link></li>
-              <li className={styles.div_li}><Link href={'/about'}>About</Link></li>
-              <li className={styles.div_li}><Link href={'/signup'}>Sign Up</Link></li>
-            </ul>
-            <div className={styles.other_div}>
-              <div className={styles.inpt_div}>
-                <input className={styles.input} type="search" placeholder='What are you looking for? ' />
-                <CiSearch className='text-3xl p-1'/>
-              </div>
-              <div className='flex gap-4 ml-7 text-2xl'>
-                <Link href={'/'}><FaRegHeart /></Link>
-                <Link href={'/'}><BsCart3 /></Link>
-              </div>
-              <button
-                  className={styles.hamburger}
-                  onClick={toggleMenu}
-                  aria-label="Toggle menu"
-                  aria-expanded={menuVisible}
-                >
-                  &#9776;
-                </button>
-
-            </div>
-          </div>
-      </div>
-
-
-
-
-
-
-      
     </div>
-
-   </div>
   )
 }
 
