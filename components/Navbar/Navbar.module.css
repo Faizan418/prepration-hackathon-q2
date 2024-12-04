@@ -18,7 +18,7 @@
 }
 .div_two{
     /* border: 1px solid black; */
-    width: 70%;
+    width: 80%;
     font-size: 12px;
     color: white;
     font-weight: 400;
@@ -130,12 +130,8 @@
     }
 }
 @media(max-width: 1030px){
-    .div_one{
-        display: none;
-    }
-    .div_two{
-        width: 100%;
-    }
+   
+    
     .second{
         padding: 0;
     }
@@ -189,6 +185,17 @@
     .ul_div{
         left: 50px;
     }
+    .div_one{
+        display: none;
+
+    }
+    .div_two{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-left: 0px;
+        width: 100%;
+    }
 }
 @media(max-width: 700px){
     .main_containar{
@@ -216,6 +223,7 @@
         text-align: center;
         justify-content: center;
         padding-left: 0px;
+        
     }
     .ul_div{
         top: 105px;

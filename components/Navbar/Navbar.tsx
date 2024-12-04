@@ -13,11 +13,8 @@ const Navbar = () => {
   };
 
   return (
-   <div className={styles.main_containar}>
-
-    <div className={styles.containar}>
-
-      <div className={styles.first}>
+  <div>
+    <div className={styles.first}>
           <div className={styles.div_one}></div>
           <div className={styles.div_two}>
             <div className={styles.extra_headings}>
@@ -35,6 +32,11 @@ const Navbar = () => {
             </div>
           </div>
       </div>
+   <div className={styles.main_containar}>
+
+    <div className={styles.containar}>
+
+      
 
       <div className={styles.second}>
           <div className={styles.div_oneone}>Exclusive</div>
@@ -77,6 +79,8 @@ const Navbar = () => {
     </div>
 
    </div>
+   </div>
+
   )
 }
 
