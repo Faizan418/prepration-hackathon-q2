@@ -141,9 +141,9 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: 80px;
         /* right: 100px; */
-        left: 80px;
+        left: 00px;
         width: 60%;
         height: 82%;
         background-color: #00000056;
@@ -183,7 +183,8 @@
         padding: 10px 50px;
     }
     .ul_div{
-        left: 50px;
+        left: 0px;
+        top: 115px;
     }
     .div_one{
         display: none;
@@ -202,7 +203,7 @@
         padding: 10px 30px;
     }
     .ul_div{
-        left: 30px;
+        left: 0px;
     }
     .extra{
         display: none;
@@ -216,7 +217,10 @@
         padding: 10px 10px;
     }
     .ul_div{
-        left: 10px;
+        left: 0px;
+        top: 115px;
+        padding: 30px 30px;
+        height: 65%;
     }
     .div_two{
         flex-direction: column;
@@ -224,10 +228,6 @@
         justify-content: center;
         padding-left: 0px;
         
-    }
-    .ul_div{
-        top: 105px;
-        padding: 30px 30px;
     }
     .div_li {
         width: 100%;
