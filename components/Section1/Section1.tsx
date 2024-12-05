@@ -13,7 +13,7 @@ const Section1 = () => {
       <div className={styles.containar}>
         <div className={styles.start}>
           <span className={styles.start_one}></span>
-          <span className={styles.start_two}>Tody's</span>
+          <span className={styles.start_two}>Tody&#39;s</span>
         </div>
         <div className={styles.start_twotwo}>
           <h1 className={styles.start_tital}>Flash Sales</h1>
