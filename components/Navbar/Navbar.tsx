@@ -43,7 +43,7 @@ const Navbar = () => {
           <div className={styles.div_twotwo}>
 
             <ul className={`${styles.ul_div} ${menuVisible ? styles.show_menu : ""}`}>
-              <li className={styles.div_li}><Link href={'/'}>Home</Link></li>
+              <li className={styles.div_li}><Link href={'#Home'}>Home</Link></li>
               <li className={styles.div_li}><Link href={'/contact'}>Contact</Link></li>
               <li className={styles.div_li}><Link href={'/about'}>About</Link></li>
               <li className={styles.div_li}><Link href={'/signup'}>Sign Up</Link></li>

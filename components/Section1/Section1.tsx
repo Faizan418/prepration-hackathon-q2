@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from "react";
 import styles from './Section1.module.css'
 import Image from 'next/image'
 import { FaStar } from "react-icons/fa6";
@@ -6,7 +7,14 @@ import { CiStar } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 
-const Section1 = () => {
+const Section1: React.FC = () => {
+
+  const [isActive, setIsActive] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsActive((prev) => !prev); // Toggle active state
+  };
+
   return (
     <div className={styles.main_containar}>
 
@@ -19,19 +27,18 @@ const Section1 = () => {
           <h1 className={styles.start_tital}>Flash Sales</h1>
           <h3 className={styles.start_time}>
             <div className={styles.conate}><span className={styles.time_headings}>Day</span><br /><span className={styles.time_dataa}>03</span></div>
-            <span className='mt-4 text-3xl text-red-600'>:</span>
+            <span className={styles.dubble_dots}>:</span>
             <div className={styles.conate}><span className={styles.time_headings}>Hour</span><br /><span className={styles.time_dataa}>23</span></div>
-            <span className='mt-4 text-3xl text-red-600'>:</span>
+            <span className={styles.dubble_dots}>:</span>
             <div className={styles.conate}><span className={styles.time_headings}>Minuts</span><br /><span className={styles.time_dataa}>19</span></div>
-            <span className='mt-4 text-3xl text-red-600'>:</span>
+            <span className={styles.dubble_dots}>:</span>
             <div className={styles.conate}><span className={styles.time_headings}>Second</span><br /><span className={styles.time_dataa}>59</span></div>
           </h3>
-          <span className='text-4xl p-2 border-slate-700 flex gap-4'><FaArrowLeft /><FaArrowRight /></span>
+          <span className='text-3xl p-2 border-slate-700 flex gap-4'><FaArrowLeft className={styles.left_btn}/><FaArrowRight className={styles.right_btn} onClick={handleButtonClick}/></span>
         </div>
 
 
-
-        <div className={styles.grid}>
+        <div className={`${styles.grid} ${isActive ? "active" : ""}`}>
 
           <div className={styles.main_box}>
               <div className={styles.img_div}>
