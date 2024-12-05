@@ -54,8 +54,8 @@ const Footer = () => {
                 <Image src={'/images/file-footer/Qr-Code.png'} alt='Q/R Code' height={70} width={70}/>
               </span>
               <span className={styles.t}>
-              <Image src={'/images/file-footer/GooglePlay.png'} alt='Q/R Code' height={105} width={105}/>
-              <Image src={'/images/file-footer/AppStore.png'} alt='Q/R Code' height={105} width={105}/>
+              <Image src={'/images/file-footer/GooglePlay.png'} alt='Q/R Code' height={10} width={105}/>
+              <Image src={'/images/file-footer/AppStore.png'} alt='Q/R Code' height={10} width={105}/>
               </span>
             </div>
             <div className={styles.social_icon_div}>

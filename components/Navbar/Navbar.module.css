@@ -144,8 +144,8 @@
         top: 80px;
         /* right: 100px; */
         left: 00px;
-        width: 60%;
-        height: 82%;
+        width: 50%;
+        height: 90%;
         background-color: #00000056;
         color: white;
         backdrop-filter: blur(7px);
@@ -156,6 +156,7 @@
     } 
     .div_li {
         width: 100%;
+        
         padding: 9px 20px;
       }
       .ul_div.show_menu {
@@ -220,7 +221,7 @@
         left: 0px;
         top: 115px;
         padding: 30px 30px;
-        height: 65%;
+        height: 95%;
     }
     .div_two{
         flex-direction: column;
