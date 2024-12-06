@@ -15,7 +15,7 @@ const Signup = () => {
       <Navbar2/>
         <div className={styles.main_containar}>
           <div className={styles.containar}>
-            <div className={styles.div_left}><Image src={'/images/signup-login/side Image.png'} alt='img' height={100} width={800}/></div>
+            <div className={styles.div_left}><Image src={'/images/signup-login/SideImage.png'} alt='img' height={100} width={800}/></div>
             <div className={styles.div_right}>
               <form className={styles.form_div}>
                 <h1 className={styles.tital_heading}>Create an account</h1>
