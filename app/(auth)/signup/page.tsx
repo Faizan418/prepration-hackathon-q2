@@ -1,3 +1,4 @@
+'use client'
 import Footer from '@/components/Footer/Footer'
 import Navbar2 from '@/components/Navbar2/Navbar2'
 import React from 'react'
@@ -5,6 +6,10 @@ import styles from './signup.module.css'
 import Image from 'next/image'
 
 const Signup = () => {
+  function Create(){
+    alert("Account Created Successfully")
+    window.location.href = '/login' 
+  }
   return (
     <div>
       <Navbar2/>
@@ -17,22 +22,22 @@ const Signup = () => {
                 <p className={styles.tital_pera}>Enter your details below</p>
 
                 <div className={styles.input_div}>
-                  <input className={styles.inputss} type="text" placeholder="Username" required />
+                  <input className={styles.inputss} id='inputs' type="text" placeholder="Username" required />
                 </div>
                 <div className={styles.input_div}>
-                  <input className={styles.inputss} type="email" placeholder="Email" required />
+                  <input className={styles.inputss} id='inputs' type="email" placeholder="Email" required />
                 </div>
                 <div className={styles.input_div}>
-                  <input className={styles.inputss} type="password" placeholder="Password 4-18"  minLength={4} maxLength={18} required/>
+                  <input className={styles.inputss} id='inputs' type="password" placeholder="Password 4-18"  minLength={4} maxLength={18} required/>
                 </div>
                 <div className={styles.input_div}>
-                  <input className={styles.inputss} type="password" placeholder="Confirm Password"  minLength={4} maxLength={18} required />
+                  <input className={styles.inputss} id='inputs' type="password" placeholder="Confirm Password"  minLength={4} maxLength={18} required />
                 </div>
               <div className={styles.btn_div}>
-                <button className={styles.btn1} type="submit">Create Account</button>
+                <button className={styles.btn1} type="submit" onClick={Create}>Create Account</button>
                 <button className={styles.btn2} type="submit">Sign Up with Google</button>
               </div>
-                <p className={styles.p_text}>Already have an account? <a href='/login'>Login</a></p>
+                <p className={styles.p_text}>Already have an account? <a className='text-blue-700 font-bold' href='/login'>Login</a></p>
               </form>
             </div>
           </div>

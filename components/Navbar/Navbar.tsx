@@ -75,10 +75,10 @@ const Navbar = () => {
                 </div>
                 <div className="flex gap-4 ml-7 text-2xl">
                   <Link href={"/"}>
-                    <FaRegHeart />
+                    <FaRegHeart className="hover:text-red-600"/>
                   </Link>
                   <Link href={"/"}>
-                    <BsCart3 />
+                    <BsCart3 className="hover:text-red-600"/>
                   </Link>
                 </div>
                 <button

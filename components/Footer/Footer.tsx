@@ -33,7 +33,7 @@ const Footer = () => {
           <div className={styles.card}>
             <h3 className={styles.headings_center}>Account</h3>
             <p className={styles.peras}><Link className={styles.Links} href={''}>My Account</Link>  </p>
-            <p className={styles.peras}><Link className={styles.Links} href={''}>Login / Register</Link>  </p>
+            <p className={styles.peras}><Link className={styles.Links} href={'/signup'}>Login / Register</Link>  </p>
             <p className={styles.peras}><Link className={styles.Links} href={''}>Cart</Link>  </p>
             <p className={styles.peras}><Link className={styles.Links} href={''}>Wishlist</Link>  </p>
             <p className={styles.peras}><Link className={styles.Links} href={''}>Shop</Link>  </p>
