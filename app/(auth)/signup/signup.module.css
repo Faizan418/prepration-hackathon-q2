@@ -1,0 +1,114 @@
+.main_containar{
+    /* border: 1px solid rgb(0, 0, 0); */
+    height: 100%;
+    padding: 50px 0px;
+}
+.containar{
+    /* border: 1px solid rgb(245, 10, 10); */
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    padding: 0px px;
+    display: flex;
+}
+.div_left{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.div_right{
+    width: 50%;    
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_div{
+    /* border: 1px solid black; */
+    width: 400px;
+}
+.tital_heading{
+    font-size: 30px;
+    font-weight: 500;
+}.tital_pera{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.input_div{
+    border-bottom: 1px solid rgb(172, 170, 170);
+    padding: 6px 2px;
+    margin-bottom: 16px;
+    
+}
+.inputss{
+    outline: none;
+    width: 300px;
+    font-weight: 500;
+}
+.btn_div{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.btn1{
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 70%;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.btn2{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.btn1:hover{
+    width: 150%;
+    transition: ease-in 0.4s;
+    width: 95%;
+    transition: ease-out 0.4s;
+    /* border: 1px solid black; */
+}
+.btn2:hover{
+    width: 150%;
+    transition: ease-in 0.4s;
+    width: 95%;
+    transition: ease-out 0.4s;
+}
+.p_text{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+}
+
+@media(max-width: 830px){
+    .containar{
+        padding: 5px 20px;
+    }
+}
+@media(max-width: 1015px){
+    .containar{
+        flex-direction: column;
+    }
+    .div_left{
+        width: 100%;
+    }
+    .div_right{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

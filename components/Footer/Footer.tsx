@@ -27,8 +27,8 @@ const Footer = () => {
           <div className={styles.card}>
             <h3 className={styles.headings_center}>Support</h3>
             <p className={styles.peras}>111 Bijoy sarani, Dhaka, <br /> Dh 1515, Bangladesh. </p>
-            <p className={styles.peras}><Link className={styles.Links} href={''}>muhammadf4060@gmail.com</Link></p>
-            <p className={styles.peras}><Link className={styles.Links} href={''}>+92340-60443-59</Link></p>
+            <p className={styles.peras}><Link className={styles.Links} href={'mailto:muhammadf4060@gmail.com'}>muhammadf4060@gmail.com</Link></p>
+            <p className={styles.peras}><Link className={styles.Links} href={'https://wa.me/+923406044359'}>+92340-60443-59</Link></p>
           </div>
           <div className={styles.card}>
             <h3 className={styles.headings_center}>Account</h3>
@@ -59,10 +59,10 @@ const Footer = () => {
               </span>
             </div>
             <div className={styles.social_icon_div}>
-            <span className={styles.icon_}><Link className={styles.Links} href={''}><FaFacebookF /></Link></span>
-              <span className={styles.icon_}><Link className={styles.Links} href={''}><SlSocialTwitter /></Link></span>
-              <span className={styles.icon_}><Link className={styles.Links} href={''}><FiInstagram /></Link></span>
-              <span className={styles.icon_}><Link className={styles.Links} href={''}><ImLinkedin2 /></Link></span>
+            <span className={styles.icon_}><Link className={styles.Links} href={'https://web.facebook.com/faizan.soomro.963'}><FaFacebookF /></Link></span>
+              <span className={styles.icon_}><Link className={styles.Links} href={'https://x.com/muhammadf4060'}><SlSocialTwitter /></Link></span>
+              <span className={styles.icon_}><Link className={styles.Links} href={'https://www.instagram.com/fazii.963/'}><FiInstagram /></Link></span>
+              <span className={styles.icon_}><Link className={styles.Links} href={'https://www.linkedin.com/in/muhammad-faizan-2541132b8'}><ImLinkedin2 /></Link></span>
             </div>
           </div>
         </div>
