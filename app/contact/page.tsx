@@ -1,12 +1,17 @@
-import React from 'react'
-// import styles from './contact.module.css'
+import Navbar from '@/components/Navbar/Navbar'
+import styles from './contact.module.css'
+import Footer from '@/components/Footer/Footer'
 
 const Contact = () => {
   return (
     <div>
-
-      this is contact page
-      
+      <Navbar/>
+      <div className={styles.main_containar}>
+        <div className={styles.containar}>
+          this is contact page
+        </div>
+      </div>
+      <Footer/>
     </div>
   )
 }

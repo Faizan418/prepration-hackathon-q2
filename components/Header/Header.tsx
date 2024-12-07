@@ -50,6 +50,8 @@ const Header = () => {
           </ul>
         </div>
         <div className={styles.second_div}>
+
+
           <div className={styles.banner_div}>
             <div className={styles.one}>
               <div className={styles.one_one}>
@@ -83,7 +85,10 @@ const Header = () => {
                 height={100}
               />
             </div>
+
           </div>
+
+
         </div>
       </div>
     </div>

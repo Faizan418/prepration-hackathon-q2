@@ -80,6 +80,13 @@
     width: 95%;
     transition: ease-out 0.4s;
 } */
+.btn1:hover {
+    /* transform: scale(1.1); */
+    transform: scale(1.2);
+}
+.btn1:active {
+    background-color: #d46161;
+}
 .btn2:hover{
     color: blue;
 }

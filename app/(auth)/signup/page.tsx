@@ -35,7 +35,7 @@ const Signup = () => {
                 </div>
               <div className={styles.btn_div}>
                 <button className={styles.btn1} type="submit" onClick={Create}>Create Account</button>
-                <button className={styles.btn2} type="submit">Sign Up with Google</button>
+                <button className={styles.btn2} type="submit"><span><Image src={'/images/signup-login/Icon-Google.png'} alt='google' height={100} width={20}/></span>Sign Up with Google</button>
               </div>
                 <p className={styles.p_text}>Already have an account? <a className='text-blue-700 font-bold' href='/login'>Login</a></p>
               </form>
